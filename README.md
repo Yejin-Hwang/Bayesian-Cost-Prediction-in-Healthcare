@@ -205,6 +205,8 @@ jupyter notebook notebooks/Health\ Care\ Cost\ Prediction\ Frequentist\ vs\ baye
 </div>
 
 ### 🎯 Bayesian Analysis Results
+
+#### Posterior Distributions & Summary Statistics
 <div align="center">
 
 | Posterior Distributions | Posterior Summary |
@@ -212,10 +214,28 @@ jupyter notebook notebooks/Health\ Care\ Cost\ Prediction\ Frequentist\ vs\ baye
 | <img src="results/posterior%20distribution.png" width="400" alt="Posterior Distributions"> | <img src="results/posterior%20summary.png" width="400" alt="Posterior Summary"> |
 | *Parameter Distributions* | *Summary Statistics* |
 
+</div>
+
+**Posterior Distributions**: Shows the probability distributions of model parameters (intercepts, slopes) after incorporating both prior knowledge and observed data. Each parameter's uncertainty is quantified through these distributions.
+
+**Posterior Summary**: Provides key statistics including mean, standard deviation, and credible intervals for each parameter, enabling robust uncertainty quantification.
+
+#### HMC Sampling & Convergence Diagnostics
+<div align="center">
+
 | HMC Sampling Results | MCMC Diagnostics |
 |:---:|:---:|
 | <img src="results/result-HMC.png" width="400" alt="HMC Results"> | <img src="results/traceplot.png" width="400" alt="Trace Plot"> |
 | *Hamiltonian Monte Carlo* | *Convergence Diagnostics* |
+
+</div>
+
+**HMC Sampling Results**: Displays the Hamiltonian Monte Carlo sampling process, showing how the algorithm explores the posterior distribution efficiently using gradient information.
+
+**Trace Plots**: Essential convergence diagnostics showing the sampling chains for each parameter. Well-mixed chains indicate successful convergence to the posterior distribution.
+
+#### Rank Plot Analysis
+<div align="center">
 
 | Rank Plot Analysis |
 |:---:|
@@ -223,6 +243,8 @@ jupyter notebook notebooks/Health\ Care\ Cost\ Prediction\ Frequentist\ vs\ baye
 | *MCMC Rank Diagnostics* |
 
 </div>
+
+**Rank Plots**: Advanced diagnostic tool for assessing MCMC chain quality. Uniform distribution across ranks indicates proper mixing and convergence. Any patterns or clustering suggests potential sampling issues.
 
 ### 📋 Analysis Summary
 - **Data Exploration**: Comprehensive EDA with distribution analysis and correlation matrices
