@@ -28,6 +28,15 @@ This project implements and compares two statistical approaches for healthcare c
 - **Features**: Age, Sex, BMI, Children, Smoker, Region, Charges
 - **Target**: Healthcare charges (continuous variable)
 
+### 🔄 Analysis Pipeline Overview
+<div align="center">
+
+<img src="results/pipeline_overview.png" width="600" alt="Analysis Pipeline Overview">
+
+*Complete workflow from data exploration to model comparison*
+
+</div>
+
 ## 🔍 Key Features
 
 ### Bayesian Analysis
